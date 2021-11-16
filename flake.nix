@@ -29,7 +29,7 @@
           nixpkgs.config.allowAliases = false;
           virtualisation = {
             qemu.options = [ "-device intel-hda -device hda-duplex" ];
-            memorySize = 4096;
+            memorySize = 2048;
             diskSize = 8192;
           };
         })
