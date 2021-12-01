@@ -26,7 +26,6 @@
               password = "test";
             };
           };
-          nix.package = pkgs.nix_2_4;
           nixpkgs.config.allowAliases = false;
           virtualisation = {
             qemu.options = [ "-device intel-hda -device hda-duplex" ];
