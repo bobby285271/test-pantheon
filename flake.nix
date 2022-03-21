@@ -35,10 +35,10 @@
         })
       ];
     };
-    defaultPackage.x86_64-linux = self.nixosConfigurations.vm.config.system.build.vm;
-    defaultApp.x86_64-linux = {
+    packages.x86_64-linux.default = self.nixosConfigurations.vm.config.system.build.vm;
+    apps.x86_64-linux.default = {
       type = "app";
-      program = "${self.defaultPackage.x86_64-linux}/bin/run-nixos-vm";
+      program = "${self.packages.x86_64-linux.default}/bin/run-nixos-vm";
     };
   };
 }
