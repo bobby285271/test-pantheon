@@ -24,6 +24,7 @@
           memorySize = 2048;
           diskSize = 8192;
         };
+        system.stateVersion = "22.05";
       }];
     };
     packages.x86_64-linux.default = self.nixosConfigurations.vm.config.system.build.vm;
